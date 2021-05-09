@@ -1,0 +1,26 @@
+{
+  "name": "storybook-frontend",
+  "version": "1.0.0",
+  "description": "StoryBook Frontend",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harounach/storybook-frontend.git"
+  },
+  "keywords": [
+    "StoryBook"
+  ],
+  "author": "Haroun Ach",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/harounach/storybook-frontend/issues"
+  },
+  "homepage": "https://github.com/harounach/storybook-frontend#readme",
+  "devDependencies": {
+    "sass": "^1.32.12"
+  }
+}
