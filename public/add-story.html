@@ -14,51 +14,53 @@
       </div>
     </header>
     <main class="add-story-page__main main">
-      <form method="POST" class="form">
-        <div class="form__section">
-          <label for="title">Title</label>
-          <input
-            name="title"
-            id="title"
-            type="text"
-            class="form__input-control"
-          />
-        </div>
-        <div class="form__section">
-          <label for="body" class="form__label">Body</label>
-          <textarea
-            name="body"
-            id="body"
-            cols="30"
-            rows="10"
-            class="form__area"
-          ></textarea>
-        </div>
-
-        <div class="form__section">
-          <label for="public" class="form__label">Public</label>
-          <input
-            type="radio"
-            name="status"
-            value="public"
-            id="public"
-            class="form__radio"
-          />
-          <label for="private" class="form__label">Private</label>
-          <input
-            type="radio"
-            name="status"
-            value="private"
-            id="private"
-            class="form__radio"
-          />
-        </div>
-        <div class="form__section">
-          <div class="btn-group">
-            <button class="btn btn--submit">Add Story</button>
+      <div class="add-story-page__form">
+        <form method="POST" class="form">
+          <div class="form__section">
+            <label for="title">Title</label>
+            <input
+              name="title"
+              id="title"
+              type="text"
+              class="form__input-control"
+            />
           </div>
-        </div>
-      </form>
+          <div class="form__section">
+            <label for="body" class="form__label">Body</label>
+            <textarea
+              name="body"
+              id="body"
+              cols="30"
+              rows="10"
+              class="form__area"
+            ></textarea>
+          </div>
+
+          <div class="form__section">
+            <label for="public" class="form__label">Public</label>
+            <input
+              type="radio"
+              name="status"
+              value="public"
+              id="public"
+              class="form__radio"
+            />
+            <label for="private" class="form__label">Private</label>
+            <input
+              type="radio"
+              name="status"
+              value="private"
+              id="private"
+              class="form__radio"
+            />
+          </div>
+          <div class="form__section">
+            <div class="btn-group">
+              <button class="btn btn--submit">Add</button>
+            </div>
+          </div>
+        </form>
+      </div>
     </main>
     <footer class="add-story-page__footer footer">
       <p class="footer__copyright">Copyright Haroun Ach 2021</p>
