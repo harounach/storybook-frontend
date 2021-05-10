@@ -1,0 +1,20 @@
+// home-page
+.home-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  // home-page__header
+  &__header {
+    flex-shrink: 0;
+  }
+
+  // home-page__main
+  &__main {
+    flex-grow: 1;
+  }
+
+  // home-page__footer
+  &__footer {
+    flex-shrink: 0;
+  }
+}
