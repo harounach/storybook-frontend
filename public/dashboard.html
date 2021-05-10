@@ -5,18 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body class="dashboard-page">
     <header class="dashboard-page__header appbar">
       <div class="appbar__section">
-        <h1 class="app-name">Story Book</h1>
+        <h1 class="appbar__app-name">Story Book</h1>
       </div>
       <div class="appbar__section">
         <nav class="appbar__nav">
-          <a href="./dashboard.html" class="appbar__link">Dashboard</a>
+          <a href="./dashboard.html" class="appbar__link appbar__link--active"
+            >Dashboard</a
+          >
           <a href="./stories.html" class="appbar__link">Public</a>
-          <a href="#" class="appbar__link">Logout</a>
+          <a href="#" class="appbar__link appbar__link--right">Logout</a>
         </nav>
       </div>
     </header>
