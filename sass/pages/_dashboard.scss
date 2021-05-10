@@ -1,0 +1,22 @@
+// dashboard-page
+.dashboard-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  // dashboard-page__header
+  &__header {
+    flex-shrink: 0;
+  }
+
+  // dashboard-page__main
+  &__main {
+    flex-grow: 1;
+    padding: 1rem;
+  }
+
+  // dashboard-page__footer
+  &__footer {
+    flex-shrink: 0;
+    margin-top: auto;
+  }
+}

@@ -17,6 +17,11 @@
   padding: 0 1rem;
   cursor: pointer;
 
+  // btn--bg-white
+  &--bg-white {
+    background-color: #fff;
+  }
+
   // btn--36px
   &--36 {
     width: 2.25rem;
@@ -52,10 +57,43 @@
     border-radius: 50%;
   }
 
+  // btn--left
+  &--left {
+    margin-right: auto;
+  }
+
+  // btn--left-margin
+  &--left-margin {
+    margin-left: 1rem;
+  }
+
+  // btn--right-margin
+  &--right-margin {
+    margin-right: 1rem;
+  }
+
+  // btn--margin
+  &--right-margin {
+    margin: 0 1rem;
+  }
+
   //btn__icon
   &__icon {
     width: 24px;
     height: 24px;
     fill: vars.$on-primary-color;
+  }
+}
+
+//btn-group
+.btn-group {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  // btn-group--right
+  &--right {
+    justify-content: flex-end;
   }
 }

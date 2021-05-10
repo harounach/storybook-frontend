@@ -1,0 +1,55 @@
+@use "../abstracts/variables" as vars;
+@use "../abstracts/mixins";
+@use "../base/typography" as type;
+
+// story-grid
+.story-grid {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+// story-card
+.story-card {
+  width: 100%;
+  margin: 0;
+  padding: 0 1rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  background-color: vars.$surface-color;
+  @include mixins.surface-shadow;
+  // story-card__section
+  &__section {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  // story-card__avatar-wrapper
+  &__avatar-wrapper {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0.25rem auto;
+    outline: 2px solid vars.$secondary-color;
+  }
+
+  // story-card__avatar
+  &__avatar {
+    min-width: 100%;
+  }
+
+  // story-card__title
+  &__title {
+    color: type.$text-high-color;
+  }
+
+  // story-card__body
+  &__body {
+    color: type.$text-medium-color;
+  }
+}
