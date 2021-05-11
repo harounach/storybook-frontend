@@ -1,0 +1,22 @@
+// public-page
+.public-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  // public-page__header
+  &__header {
+    flex-shrink: 0;
+  }
+
+  // public-page__main
+  &__main {
+    flex-grow: 1;
+    padding: 1rem;
+  }
+
+  // public-page__footer
+  &__footer {
+    flex-shrink: 0;
+    margin-top: auto;
+  }
+}
