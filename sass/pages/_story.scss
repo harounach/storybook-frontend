@@ -1,0 +1,22 @@
+// story-page
+.story-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  // story-page__header
+  &__header {
+    flex-shrink: 0;
+  }
+
+  // story-page__main
+  &__main {
+    flex-grow: 1;
+    padding: 1rem;
+  }
+
+  // story-page__footer
+  &__footer {
+    flex-shrink: 0;
+    margin-top: auto;
+  }
+}
