@@ -5,58 +5,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Add Story</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body class="add-story-page">
-    <header class="add-story-page appbar">
+    <header class="add-story-page__header appbar">
       <div class="appbar__section">
-        <h1 class="app-name">Story Book</h1>
+        <h1 class="appbar__app-name">Story Book</h1>
+      </div>
+      <div class="appbar__section">
+        <nav class="appbar__nav">
+          <a href="./dashboard.html" class="appbar__link">Dashboard</a>
+          <a href="./stories.html" class="appbar__link">Public</a>
+          <a href="#" class="appbar__link appbar__link--right">Logout</a>
+        </nav>
       </div>
     </header>
     <main class="add-story-page__main main">
-      <h3 class="title">Create a story</h3>
-      <div class="add-story-page__form">
+      <div class="add-story-page__form-wrapper">
+        <h3 class="title">Create a story</h3>
         <form method="POST" class="form">
           <div class="form__section">
-            <label for="title">Title</label>
+            <label for="title" class="form__label">Title</label>
             <input
               name="title"
               id="title"
               type="text"
               class="form__input-control"
             />
+            <p class="form__error-message"></p>
           </div>
           <div class="form__section">
             <label for="body" class="form__label">Body</label>
-            <textarea
-              name="body"
-              id="body"
-              cols="30"
-              rows="10"
-              class="form__area"
-            ></textarea>
+            <textarea name="body" id="body" class="form__area"></textarea>
+            <p class="form__error-message"></p>
           </div>
 
           <div class="form__section">
-            <label for="public" class="form__label">Public</label>
-            <input
-              type="radio"
-              name="status"
-              value="public"
-              id="public"
-              class="form__radio"
-            />
-            <label for="private" class="form__label">Private</label>
-            <input
-              type="radio"
-              name="status"
-              value="private"
-              id="private"
-              class="form__radio"
-            />
+            <div class="form__radio-section">
+              <label for="public" class="form__label">Public</label>
+              <input
+                type="radio"
+                name="status"
+                value="public"
+                id="public"
+                class="form__radio"
+              />
+            </div>
+
+            <div class="form__radio-section">
+              <label for="private" class="form__label">Private</label>
+              <input
+                type="radio"
+                name="status"
+                value="private"
+                id="private"
+                class="form__radio"
+              />
+            </div>
           </div>
           <div class="form__section">
-            <div class="btn-group">
+            <div class="btn-group add-story-page__btn-group">
               <button class="btn btn--submit">Add</button>
             </div>
           </div>

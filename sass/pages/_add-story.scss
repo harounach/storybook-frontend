@@ -1,0 +1,34 @@
+// add-story-page
+.add-story-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  // add-story-page__header
+  &__header {
+    flex-shrink: 0;
+  }
+
+  // add-story-page__main
+  &__main {
+    width: 100%;
+    flex-grow: 1;
+    padding: 1rem;
+  }
+
+  // add-story-page__form-wrapper
+  &__form-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  // add-story-page__btn-group
+  &__btn-group {
+    justify-content: center;
+  }
+
+  // add-story-page__footer
+  &__footer {
+    flex-shrink: 0;
+    margin-top: auto;
+  }
+}
