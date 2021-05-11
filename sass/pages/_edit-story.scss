@@ -1,0 +1,34 @@
+// edit-story-page
+.edit-story-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  // edit-story-page__header
+  &__header {
+    flex-shrink: 0;
+  }
+
+  // edit-story-page__main
+  &__main {
+    width: 100%;
+    flex-grow: 1;
+    padding: 1rem;
+  }
+
+  // edit-story-page__form-wrapper
+  &__form-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  // edit-story-page__btn-group
+  &__btn-group {
+    justify-content: center;
+  }
+
+  // edit-story-page__footer
+  &__footer {
+    flex-shrink: 0;
+    margin-top: auto;
+  }
+}
