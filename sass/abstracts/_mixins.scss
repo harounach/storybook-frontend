@@ -11,3 +11,11 @@
     0 10.5px 6.9px rgba(0, 0, 0, 0.03), 0 19.6px 13px rgba(0, 0, 0, 0.036),
     0 47px 31px rgba(0, 0, 0, 0.05);
 }
+
+@mixin btn-shadow {
+  box-shadow: 1px 4px 18px 0px rgba(0, 0, 0, 0.23);
+}
+
+@mixin btn-hover-shadow {
+  box-shadow: 1px 4px 18px 4px rgba(0, 0, 0, 0.23);
+}

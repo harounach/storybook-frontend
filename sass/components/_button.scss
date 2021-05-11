@@ -57,6 +57,21 @@
     border-radius: 50%;
   }
 
+  // btn--fab
+  &--fab {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    @include mixins.btn-shadow;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+
+    &:hover {
+      @include mixins.btn-hover-shadow;
+    }
+  }
+
   // btn--left
   &--left {
     margin-right: auto;
