@@ -11,6 +11,7 @@
   flex-direction: column;
   background-color: vars.$surface-color;
   @include mixins.surface-shadow;
+  position: relative;
   // story__section
   &__section {
     width: 100%;
@@ -42,5 +43,23 @@
   // story__body
   &__body {
     color: type.$text-medium-color;
+  }
+
+  // story__status
+  &__status {
+    display: inline-block;
+    padding: 0.5rem;
+    border: 1px solid #0c600c;
+    position: absolute;
+    top: 0.5rem;
+    left: 1rem;
+    font-size: 12px;
+    color: #0c600c;
+
+    // story__status--private
+    &--private {
+      border-color: #ac032c;
+      color: #ac032c;
+    }
   }
 }
