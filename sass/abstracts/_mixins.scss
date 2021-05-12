@@ -1,3 +1,6 @@
+@use "sass:map";
+@use "./variables" as vars;
+
 @mixin surface-shadow {
   box-shadow: 0 1.3px 0.9px rgba(0, 0, 0, 0.008),
     0 3.1px 2.1px rgba(0, 0, 0, 0.012), 0 5.9px 3.9px rgba(0, 0, 0, 0.015),
@@ -18,4 +21,46 @@
 
 @mixin btn-hover-shadow {
   box-shadow: 1px 4px 18px 4px rgba(0, 0, 0, 0.23);
+}
+
+// tablet
+@mixin tablet {
+  @media screen and (min-width: map.get(vars.$breakpoints, "tablet")) {
+    @content;
+  }
+}
+
+// large tablet
+@mixin large-tablet {
+  @media screen and (min-width: map.get(vars.$breakpoints, "large-tablet")) {
+    @content;
+  }
+}
+
+// extra large tablet
+@mixin xlarge-tablet {
+  @media screen and (min-width: map.get(vars.$breakpoints, "xlarge-tablet")) {
+    @content;
+  }
+}
+
+// small desktop
+@mixin small-desktop {
+  @media screen and (min-width: map.get(vars.$breakpoints, "small-desktop")) {
+    @content;
+  }
+}
+
+// desktop
+@mixin desktop {
+  @media screen and (min-width: map.get(variables.$breakpoints, "desktop")) {
+    @content;
+  }
+}
+
+// large desktop
+@mixin large-desktop {
+  @media screen and (min-width: map.get(variables.$breakpoints, "large-desktop")) {
+    @content;
+  }
 }
