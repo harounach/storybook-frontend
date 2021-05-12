@@ -10,6 +10,17 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
+
+  // tablet
+  @include mixins.tablet {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  // xlarge-tablet
+  @include mixins.xlarge-tablet {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
 }
 
 // story-card
