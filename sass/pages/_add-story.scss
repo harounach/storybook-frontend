@@ -1,8 +1,11 @@
+@use "../abstracts/mixins";
+
 // add-story-page
 .add-story-page {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  align-items: center;
   // add-story-page__header
   &__header {
     flex-shrink: 0;
@@ -13,6 +16,27 @@
     width: 100%;
     flex-grow: 1;
     padding: 1rem;
+
+    // tablet
+    @include mixins.tablet {
+      padding: 1rem 1.5rem;
+    }
+
+    // xlarge-tablet
+    @include mixins.xlarge-tablet {
+      padding: 1rem 2rem;
+      width: 70%;
+    }
+
+    // desktop
+    @include mixins.desktop {
+      width: 65%;
+    }
+
+    // large-desktop
+    @include mixins.large-desktop {
+      width: 50%;
+    }
   }
 
   // add-story-page__form-wrapper
